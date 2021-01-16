@@ -8,12 +8,20 @@
     font-size: 48px;
 }
 
-   p{
-       color: white;
-       text-align: center;
-       font-size: 18;
-       font-family: 'Oswald', sans-serif;
-   }
+p{
+    color: white;
+    text-align: center;
+    font-size: 18;
+    font-family: 'Oswald', sans-serif;
+}
+
+a:link, a:visited {
+    
+    color: lightgrey;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
    
    .main video {
        position: fixed;
