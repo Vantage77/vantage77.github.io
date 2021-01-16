@@ -2,10 +2,12 @@ h1{
  text-align: center;   
  font-family: 'Oswald', sans-serif;
  color: white;
+ font-size: 48px;
 }
 
 p{
     color: white;
+    text-align: center;
 }
 
 .main video {
@@ -15,5 +17,36 @@ p{
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50px;
+    bottom: 75px;
+    z-index: 10;
     
   }
+
+  .menu ul {
+    position: relative;
+    list-style: none;
+  }
+  
+  .menu ul li {
+    padding-bottom: 30px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+  }
+  
+  .menu ul li a:hover {
+    color: #404764;
+    border-bottom: 2px #404764 solid;
+  }
+  
