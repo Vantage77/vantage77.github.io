@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="learnStyle.css ">
+    <link rel="stylesheet" href="style.css ">
+    <script src = "script.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
         </style>
@@ -30,5 +31,43 @@
             <li><a href="learn.html">Learn More</a></li>
         </ul>
       </div>
+
+      <div class="contactForm">
+        <form action="index.html" onsubmit="return validateForm()" name ="form">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <p class = "required">This is a required field</p>
+
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <p class = "required">This is a required field</p>
+
+            <label for="email">E-Mail:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <p class = "required">This is a required field</p>
+
+            <label for="phone">Phone Number (xxx-xxx-xxxx):</label><br>
+            <input type="phone" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+            <p class = "required">This is a required field</p>
+
+            <label for="comments">Comments:</label><br>
+            <input type="text" id="comments" name="comments"><br>
+            <p class = "required">This is a required field</p><br>
+
+            <input type="submit">
+            <input type = "reset">
+          </form> 
+      </div>
+
+      <footer id = "foot">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="otherProjects.html">Other Projects</a></li>
+          <li><a href="learn.html">Learn More</a></li>
+        </ul>
+      </footer>
+
 </body>
 </html>
